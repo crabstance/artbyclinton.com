@@ -632,6 +632,25 @@ section#contact .well {
 	overflow:hidden;
 }
 
+header.portfolio {
+	padding-bottom:395px;
+}
+
+section#portfolio {
+	background-color:#fff;	
+}
+section#portfolio .container {
+	margin-top:-455px;
+}
+section#portfolio .well, section#portfolio .panel {
+	overflow:hidden;  
+}
+section#portfolio h2 {
+	text-align:center;
+}
+
+
+
 footer {
 	min-height:100%;
     background-image: url(../img/headers/footer.jpg);
@@ -642,31 +661,7 @@ footer {
     -o-background-size: cover;
 }
 
-section#portfolio {
-  background: #fff url('../img/big-shadow-dark.jpg') no-repeat center 48px;
-  padding:100px 0 60px;
-}
-section#portfolio .well {
-  text-align:center;
-  overflow:hidden;
-  
-}
-section#portfolio .container {
-   background: #fff url('../img/big-shadow.jpg') no-repeat center bottom;
-}
-section#portfolio .col-md-4 .photo {
-  margin:5px auto;
-  width:100%;
-  max-width: 100%;
-  border:#1b1b1b solid 1px;
-  border-radius:3px;
-}
 
-section#portfolio .btn {
-  float:none;
-  margin:15px auto;
-  padding:15px 20px;
-}
 
 
 
