@@ -192,6 +192,7 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
+   
 }
 
 header .header-content {
@@ -529,7 +530,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding:100px 0 40px 0;
+    padding:60px 0 40px 0;
     color:#fff;
    
 }
@@ -581,31 +582,19 @@ section#newest-artwork .btn {
   padding:15px 20px;
 }
 
-section#location {
-  background-color:#fff;
-  padding:0 0 60px 0;
-}
 
-section#location .well, section#location .panel {
-	overflow:hidden;  
-}
 
-section#location .container {
-	text-align:center;
-	background: #fff url('../img/big-shadow.jpg') no-repeat center bottom;
-}
-
-section#location .apple-maps, section#location .google-maps {
-	overflow:hidden;
-	padding:15px 30px;
-}
-section#location .apple-maps img, section#location .google-maps img {
-	float:left;
-	margin:10px 30px 0 0;
+section#links {
+	margin-top:50px;
+	padding:20px 0;
 }
 
 section#links h2 {
 	color:#fff;
+}
+
+section#links img {
+	width:40px;
 }
 
 section#links {
