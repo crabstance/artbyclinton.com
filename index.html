@@ -26,8 +26,12 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
+    <link type="text/css" rel="stylesheet" href="css/my-instagram-gallery.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -158,13 +162,25 @@
 		  <div class="well">
 			<div class="content col-md-12 no-padding">
 
-        <h2>Artwork</h2>
+
 
         <div class="col-md-4">
-          <img class="photo" src="img/portfolio/artwork-1.jpg"/>
+        	<div class="panel">
+        		<div class="panel-body">
+        			<h3>Instagram</h3>
+        			<div class="bcr_ins_gallery"></div>
+        			<a class="btn btn-primary" href="https://instagram.com/artbyclinton/">View All</a>
+        		</div>
+        	</div>
         </div>
         <div class="col-md-4">
-          <img class="photo" src="img/portfolio/artwork-1.jpg" width="300"/>
+
+          <div class="panel">
+				<div class="panel-body">
+				 	<h3>Portfolio</h3>
+          			<div class="bcr_ins_gallery"></div>
+          		</div>
+          </div>
         </div>
         <div class="col-md-4 last-in-row">
 			<div class="panel">
@@ -265,6 +281,18 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+
+    		<!-- jQuery my instagram gallery -->
+			<script src="js/my-instagram-gallery.js"></script>
+
+			<!-- Setting Example -->
+			<script>
+				bcr_mig(
+					ins_id = 178405683, // your user_id
+					ins_token = '178405683.1677ed0.719b161e889743109e3ec4dd9b294b90', // your token
+					ins_limit = 5
+				);
+			</script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
