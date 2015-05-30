@@ -60,11 +60,15 @@ body.theme-1 {
 	body.theme-1 section#newest-artwork {
   		background: #444753 url('../img/shadow.png') no-repeat center 48px;
   	}	
+  	body.theme-1 section#contact {
+	  	background-color: #444753;
+  	}
   		body.theme-1 section#newest-artwork .container {
   			background:transparent url('../img/shadow.png') no-repeat center bottom;
   		}
 		body.theme-1 .well {
 			background-color:#999;
+			overflow:hidden;
 		}
 		body.theme-1 .panel {
 			background-color:#666;
@@ -608,8 +612,7 @@ section#newest-artwork .well {
   
 }
 section#newest-artwork .container {
-   
-}
+
 
 section#newest-artwork .row  .portfolio-image:first-child {
 	padding:0 0 0 15px;
@@ -632,10 +635,7 @@ section#location .well, section#location .panel {
 	overflow:hidden;  
 }
 
-section#location .container {
-	text-align:center;
-	background: #fff url('../img/big-shadow.jpg') no-repeat center bottom;
-}
+
 
 section#location .apple-maps, section#location .google-maps {
 	overflow:hidden;
@@ -679,9 +679,7 @@ section#contact .container {
 	background: #fff url('../img/big-shadow.jpg') no-repeat center bottom;
 }
 
-section#contact .well {
-	overflow:hidden;
-}
+
 
 header.portfolio {
 	padding-bottom:395px;
