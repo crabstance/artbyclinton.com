@@ -11,10 +11,34 @@ body {
 }
 
 body {
-   font-family: 'Volkhov', serif;
-   color:#1b1b1b;
-   background: #fff url('../img/background.jpg') no-repeat center top fixed;
+   font-family: 'Volkhov', serif;     
 }
+
+body.theme-1 {
+   background: #fff url('../img/background.jpg') no-repeat center top fixed;
+   color:#1b1b1b;
+}
+	body.theme-1 #links {
+		background-color: #2d2e39;
+	}
+	body.theme-1 #mainNav {
+		border-color:#000;
+		background-color:#1f1f1f;
+		-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+	}
+	
+body.theme-2 {
+   background: #fff url('../img/background-2.jpg') no-repeat center top fixed;
+}
+body.theme-3 {
+   background: #fff url('../img/background-3.jpg') no-repeat center top fixed;
+}
+body.theme-4 {
+   background: #fff url('../img/background-4.jpg') no-repeat center top fixed;
+}
+
 
 hr {
     max-width: 50px;
@@ -83,9 +107,7 @@ aside {
     padding: 0;
 }
 
-#mainNav {
-	background-color:#fff;
-}
+
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
