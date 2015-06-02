@@ -60,9 +60,6 @@ body.theme-1 {
 	body.theme-1 section#newest-artwork {
   		background: #444753 url('../img/shadow.png') no-repeat center 48px;
   	}	
-  	body.theme-1 section#contact {
-	  	background-color: #444753;
-  	}
   		body.theme-1 section#newest-artwork .container {
   			background:transparent url('../img/shadow.png') no-repeat center bottom;
   		}
@@ -73,7 +70,12 @@ body.theme-1 {
 		body.theme-1 .panel {
 			background-color:#666;
 		}
-	
+  	body.theme-1 section#contact {
+	  	background-color: #444753;
+  	}	
+  	body.theme-1 section#contact .container {
+  		background:transparent url('../img/shadow.png') no-repeat center bottom;
+  	}
 
 .list-header h1 {
   color:#fff;
@@ -611,7 +613,7 @@ section#newest-artwork .well {
   overflow:hidden;
   
 }
-section#newest-artwork .container {
+
 
 
 section#newest-artwork .row  .portfolio-image:first-child {
@@ -672,7 +674,7 @@ section#links .col-md-3 {
 section#contact {
     width: 100%;
     text-align: center;
-	background-color:#fff;    
+ 
 }
 
 section#contact .container {
