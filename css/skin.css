@@ -152,6 +152,7 @@ body.theme-1 {
 		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
 	}
 	section#about .content {
+		border:#1d1d1d solid 1px;
 		background-color:#fff;
 		background: #fff url('../img/headers/header-about.jpg') no-repeat center top;
 		text-shadow:none;
