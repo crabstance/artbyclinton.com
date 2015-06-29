@@ -2,22 +2,26 @@
 site background color 
 */
 html, body {
-	background-color:#13151c;
+	background-color:#13161d;
 }
-
-#header {
+#header .col-md-6:first-child {
 	background: url('../img/clinton.jpg') left top no-repeat;
-	background-size: contain;
+	background-size: contain;	
+}
+#header .col-md-6:first-child h1 {
+	color:#fff;		
+}
+#header .col-md-6:first-child div p {
+	color:#fff;
+}
+#header .col-md-6:last-child {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(197,197,197,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5', GradientType=0 );
 }
 
-#header .portfolio-mini {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+0,c8d7dc+100 */
-	background: rgb(242,245,246); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(200,215,220,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(200,215,220,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(242,245,246,1) 0%,rgba(200,215,220,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */	
-}
