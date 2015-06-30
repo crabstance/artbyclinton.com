@@ -24,4 +24,7 @@ html, body {
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5', GradientType=0 );
 }
+#header .col-md-6:last-child ul li {
+	border:#13161d solid 1px;
+}
 
