@@ -5,8 +5,7 @@ html, body {
 	background-color:#13161d;
 }
 #header .col-md-6:first-child {
-	background: url('../img/clinton.jpg') left top no-repeat;
-	background-size: contain;	
+	
 }
 #header .col-md-6:first-child h1 {
 	color:#fff;		

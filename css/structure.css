@@ -2,13 +2,11 @@
 	min-height:800px;
 }
 #header .col-md-6:first-child {
-	position:relative;
-	min-height:720px;
+
 }
 
 #header .col-md-6:first-child div {
-	position:absolute;
-	bottom:0;
+
 }
 
 #header .col-md-6:last-child {
