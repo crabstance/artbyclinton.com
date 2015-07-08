@@ -24,23 +24,11 @@ a {
     transition: all .35s;
 }
 
-
-span.logo { font-family: 'Italianno', cursive; font-size:7em; }
-
-h1 { font-family: 'Italianno', cursive; }
-h2,
-h3,
-h4,
-h5,
-h6 {    
-    font-family: 'Volkhov', serif;
-}
-span.list-h1 { font-size: 4em; font-family: 'Italianno', cursive; background:none; border:none;}
-
 p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+    font-family: 'Georgia', serif; 
 }
 
 section {

@@ -1,0 +1,6 @@
+#header .col-md-6:first-child div p {
+	margin-bottom:40px;
+}
+#header .col-md-6:last-child .wrapper {
+	background:transparent url('../img/arrow-down.png') center top no-repeat;
+}

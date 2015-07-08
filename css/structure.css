@@ -1,12 +1,19 @@
+h1 { font-size: 4em; font-family: 'Open Sans', sans-serif; text-transform:uppercase;}
+h2 { font-size: 2em; font-family: 'Open Sans', sans-serif; text-transform:uppercase; margin-top:40px;}
+
 #header {
 	min-height:800px;
 }
-
+#header .col-md-6:first-child div p {
+	font-size:1.65em;
+}
 #header .col-md-6:last-child {
 	position:relative;
 	text-align:center;
-	padding:72px 0;
-	
+	padding:0;
+}
+#header .col-md-6:last-child .wrapper {
+	padding:72px 0 30px 0;
 }
 #header .col-md-6:last-child ul {
 	position:relative;
@@ -25,8 +32,21 @@
 	overflow:hidden;
     	-ms-transform: rotate(45deg); /* IE 9 */
     	-webkit-transform: rotate(45deg); /* Safari */
-    	transform: rotate(45deg);	
-    	border:#333 solid 1px;
+    	transform: rotate(45deg);
+    	background-position:center center;
+    	background-repeat:no-repeat;    	
+}
+#header .col-md-6:last-child ul li div { 
+	width:200px;
+	height:200px;
+	margin-top:-50px;
+	margin-left:-50px;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    	-webkit-transform: rotate(-45deg); /* Safari */
+    	transform: rotate(-45deg);
+    	background-position:center center;
+    	background-repeat:no-repeat;
+    	background-size:200px;
 }
 	#header .col-md-6:last-child ul li:nth-child(1) { 
 		top:0px;
@@ -80,4 +100,27 @@
 		top:361px;
 		left:144px;
 	}	
-		
+
+#links h3 {
+	min-height:90px;
+	overflow:hidden;
+	text-indent:-999em;
+}
+#links iframe {
+	display:block;
+	width:376px;
+	height:376px;
+	border:none;
+	overflow:visible;
+	margin-left:-20px;
+
+}
+
+#links .facebook .photo {
+	float:		left;
+	margin-right:	20px;
+}
+#links .facebook p {
+	padding-top:15px;
+	font-size:1.25em;
+}

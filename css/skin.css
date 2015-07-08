@@ -4,14 +4,11 @@ site background color
 html, body {
 	background-color:#13161d;
 }
-#header .col-md-6:first-child {
-	
-}
+
+p { color:#c2c2c2; }
+
 #header .col-md-6:first-child h1 {
 	color:#fff;		
-}
-#header .col-md-6:first-child div p {
-	color:#fff;
 }
 #header .col-md-6:last-child {
 	background: rgba(255,255,255,1);
@@ -23,7 +20,24 @@ html, body {
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5', GradientType=0 );
 }
+#header .col-md-6:last-child .wrapper {
+	background:transparent url('../img/arrow-right.png') left 165px no-repeat;
+}
 #header .col-md-6:last-child ul li {
 	border:#13161d solid 1px;
+}
+#links .col-md-4:nth-child(1) h3 {
+	background:transparent url('../img/instagram.png') top left no-repeat;	
+}
+#links .col-md-4:nth-child(2) h3.facebook {
+	background:transparent url('../img/facebook.png') top left no-repeat;
+	
+}
+.mordor h3 {
+	background:transparent url('../img/mordor.png') top left no-repeat;
+}
+#links .col-md-4:nth-child(3) h3 {
+	background:transparent url('../img/contact.png') top left no-repeat;
+	
 }
 
