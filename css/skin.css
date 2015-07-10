@@ -53,6 +53,10 @@ p { color:#c2c2c2; }
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(197,197,197,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5', GradientType=0 );
 }
+#contact .wrapper {
+	background:transparent url('../img/fish.png') right top no-repeat;
+	background-size:contain;
+}
 #contact h3 {
 	color:#13151c;
 }
@@ -84,6 +88,7 @@ p { color:#c2c2c2; }
 }
 footer {
 	background-color:#c4c4c4; 
+	color:#afafaf;
 
 }
 
