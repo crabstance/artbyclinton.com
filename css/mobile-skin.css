@@ -5,5 +5,10 @@
 	background:transparent url('../img/arrow-down.png') center top no-repeat;
 }
 #links .facebook {
-	padding-top:60px;
+	padding-top:120px;
+}
+#links .facebook h3 {
+	margin-bottom:0;
+	padding-bottom:0;
+	height:30px;
 }

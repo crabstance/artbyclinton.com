@@ -2,7 +2,6 @@
 site background color 
 */
 html, body {
-	background-color:#13161d;
 	background-color:#13151c;
 }
 
@@ -30,6 +29,9 @@ p { color:#c2c2c2; }
 #links .col-md-6:nth-child(1) h3 {
 	background:transparent url('../img/instagram.png') top center no-repeat;	
 }
+#links .instagram a {
+	color:#fff;
+}
 #links .col-md-6:nth-child(2) h3.facebook {
 	background:transparent url('../img/facebook.png') top center no-repeat;
 	
@@ -53,5 +55,35 @@ p { color:#c2c2c2; }
 }
 #contact h3 {
 	color:#13151c;
+}
+#contact .list-group {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a4e5d+0,13151c+100 */
+	background: rgb(74,78,93); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(74,78,93,1) 0%, rgba(19,21,28,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(74,78,93,1)), color-stop(100%,rgba(19,21,28,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(74,78,93,1) 0%,rgba(19,21,28,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(74,78,93,1) 0%,rgba(19,21,28,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(74,78,93,1) 0%,rgba(19,21,28,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(74,78,93,1) 0%,rgba(19,21,28,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4e5d', endColorstr='#13151c',GradientType=0 ); /* IE6-9 */
+	border-color:#13151c;
+	
+	border-radius:4px;
+}
+#contact .list-group-item {
+	background-color:transparent;
+	border-color:#13151c;	
+	border-radius:4px;
+	color:#fff;
+}
+#contact .form-control {
+		border-color:#13151c;	
+}
+#contact input[type="submit"] {
+	color:#13151c;
+}
+footer {
+	background-color:#c4c4c4; 
+
 }
 

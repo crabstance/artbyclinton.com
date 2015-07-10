@@ -2,7 +2,7 @@ h1 { font-size: 4em; font-family: 'Open Sans', sans-serif; text-transform:upperc
 h2 { font-size: 2em; font-family: 'Open Sans', sans-serif; text-transform:uppercase; margin-top:40px;}
 
 #header {
-	min-height:800px;
+	padding-bottom:0;
 }
 #header .col-md-6:first-child div p {
 	font-size:1.65em;
@@ -102,7 +102,8 @@ h2 { font-size: 2em; font-family: 'Open Sans', sans-serif; text-transform:upperc
 	}	
 
 #links {
-	padding-top:0;
+	padding-top:0px
+	padding-bottom:40px;
 }
 #links .col-md-6 {
 	text-align:center	
@@ -121,8 +122,8 @@ h2 { font-size: 2em; font-family: 'Open Sans', sans-serif; text-transform:upperc
 	overflow:hidden;
 	text-indent:-999em;
 }
-#links iframe {
-	
+#links .instagram a {
+	display:block; font-size: 2em; font-family: 'Open Sans', sans-serif; text-transform:uppercase; margin-top:30px;
 }
 
 
@@ -140,16 +141,22 @@ h2 { font-size: 2em; font-family: 'Open Sans', sans-serif; text-transform:upperc
 #links .mordor {
 	padding-top:60px;
 	display:inline-block;
-	min-width:340px;
+	min-width:360px;
 }	
 #links .mordor h3 {
 	min-height:47px;
 }
 #links .mordor img {
 	float:left;
-	margin-right:20px;
+
 	margin-top:-20px;
+
 }
 #links .mordor p {
 	padding-top:30px;
 }
+
+#contact { padding-top:60px; }
+
+#contact h3 { display:block; font-size: 3em; font-family: 'Open Sans', sans-serif; text-transform:uppercase; margin-bottom:40px; }
+
