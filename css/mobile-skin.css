@@ -4,3 +4,6 @@
 #header .col-md-6:last-child .wrapper {
 	background:transparent url('../img/arrow-down.png') center top no-repeat;
 }
+#links .facebook {
+	padding-top:60px;
+}
