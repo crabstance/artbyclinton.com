@@ -26,17 +26,17 @@ p { color:#c2c2c2; }
 #header .col-md-6:last-child ul li {
 	border:#13161d solid 1px;
 }
-#links .col-md-4:nth-child(1) h3 {
+#links .col-md-6:nth-child(1) h3 {
 	background:transparent url('../img/instagram.png') top left no-repeat;	
 }
-#links .col-md-4:nth-child(2) h3.facebook {
+#links .col-md-6:nth-child(2) h3.facebook {
 	background:transparent url('../img/facebook.png') top left no-repeat;
 	
 }
 .mordor h3 {
 	background:transparent url('../img/mordor.png') top left no-repeat;
 }
-#links .col-md-4:nth-child(3) h3 {
+#links .col-md-6:nth-child(3) h3 {
 	background:transparent url('../img/contact.png') top left no-repeat;
 	
 }
