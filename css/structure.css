@@ -50,6 +50,8 @@ h5 { font-family: 'Open Sans', sans-serif; text-transform:uppercase; }
     	background-repeat:no-repeat;
     	background-size:200px;
 }
+#header .col-md-6:last-child ul li div a { display:block; width:200px; height:200px; }
+
 	#header .col-md-6:last-child ul li:nth-child(1) { 
 		top:0px;
 		left:72px;
@@ -101,6 +103,9 @@ h5 { font-family: 'Open Sans', sans-serif; text-transform:uppercase; }
 	#header .col-md-6:last-child ul li:nth-child(13) { 
 		top:361px;
 		left:144px;
+	}
+	#header .col-md-6:last-child ul li:nth-child(14) { 
+		display:none;
 	}	
 
 #links {
@@ -137,7 +142,7 @@ h5 { font-family: 'Open Sans', sans-serif; text-transform:uppercase; }
 	padding-top:15px;
 	font-size:1.25em;
 }
-#links .facebook .button {
+#links .facebook .fb-like {
 	margin:0 auto;
 }
 #links .mordor {

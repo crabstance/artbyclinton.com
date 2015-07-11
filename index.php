@@ -24,13 +24,14 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
-    <link type="text/css" rel="stylesheet" href="css/my-instagram-gallery.css" />
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="css/structure.css" type="text/css">
     <link rel="stylesheet" href="css/skin.css" type="text/css">
     <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/mobile-skin.css" />
+    <link rel="stylesheet" tpye="text/css" href="css/magnific-popup.css">
 
 
 
@@ -44,6 +45,15 @@
 </head>
 
 <body id="page-top" class="theme-1">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
            <div class="container-fluid">
@@ -90,21 +100,26 @@
 				<div id="mini-portfolio" class="col-md-6 clearfix">
 					<div class="wrapper">
 						<ul>
-							<li><div style="background-image:url('img/portfolio/1.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/2.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/3.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/4.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/5.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/6.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/7.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/8.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/9.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/10.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/11.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/12.jpg')">&nbsp;</div></li>
-							<li><div style="background-image:url('img/portfolio/13.jpg')">&nbsp;</div></li>
+							<?php
+							$index= 0;
+							foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator('img/portfolio/front')) as $filename)
+							{
+								// filter out "." and ".."
+								if ($filename->isDir()) continue;
+
+
+							?>
+							<li><div style="background-image:url('<?php echo $filename; ?>')"><a class="mag-pop" href="<?php echo $filename; ?>">&nbsp;</a></div></li>
+							<?php
+								if ($index==13) { exit; }
+								$index++;
+							}
+							?>
+
 						</ul>
 						<h2>View Full Portfolio</h2>
+
+
 					</div>
 				</div>
 			</div><!--/ row -->
@@ -115,16 +130,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 instagram">
-					<h3>Instagram</h3>
+					<h3><a href="https://instagram.com/artbyclinton/">Instagram</a></h3>
 					<!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/c343d0eb55bb084268a663747d9254cf1065b288.html" id="instansive_c343d0eb55" name="instansive_c343d0eb55"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-					<a href="#">View All</a>
+					<a href="https://instagram.com/artbyclinton/">View All</a>
 				</div>
 				<div class="col-md-6 facebook">
-					<h3 class="facebook">Facebook</h3>
+					<h3 class="facebook"><a href="https://www.facebook.com/clintonwiltse">Facebook</a></h3>
 					<div class="wrapper clearfix">
-						<img class="photo img-responsive" src="img/facebook-photo.png" width="180" height="180" tite="Facebook photo" alt="An photo of Clinton Wiltse"/>
-						<p>Visit me or give me a Like.</p>
-						<img class="button img-responsive"" src="img/facebook-like.png" width="144" height="60" tite="Click To Like Me" alt="A Facebook Like button."/>
+						<a href="https://www.facebook.com/clintonwiltse">
+							<img class="photo img-responsive" src="img/facebook-photo.png" width="180" height="180" tite="Facebook photo" alt="An photo of Clinton Wiltse"/>
+						</a>
+						<p><a href="https://www.facebook.com/clintonwiltse">Visit Clinton's Facebook</a> for more artwork and news.</p>
+
+
+
+
+						<div class="fb-like" data-href="https://www.facebook.com/clintonwiltse" data-width="400" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+
+
+
 					</div>
 					<div class="mordor clearfix">
 						<h3>Mordor Tattoo</h3>
@@ -213,20 +237,23 @@
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
 
-    		<!-- jQuery my instagram gallery -->
-			<script src="js/my-instagram-gallery.js"></script>
-
-			<!-- Setting Example -->
-			<script>
-				bcr_mig(
-					ins_id = 178405683, // your user_id
-					ins_token = '178405683.1677ed0.719b161e889743109e3ec4dd9b294b90', // your token
-					ins_limit = 5
-				);
-			</script>
-
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+
+	<script language="javascript">
+	$(document).ready(function() {
+		$('#header .col-md-6:last-child ul').magnificPopup({
+		  delegate: 'li div a', // child items selector, by clicking on it popup will open
+		  type: 'image'
+		  // other options
+		});
+	});
+	</script>
+
+
 
 </body>
 
