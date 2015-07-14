@@ -4,6 +4,9 @@ site background color
 html, body {
 	background-color:#13151c;
 }
+#mini-portfolio h2 a {
+	color:#13151c;
+}
 
 p { color:#c2c2c2; }
 
@@ -91,4 +94,4 @@ footer {
 	color:#afafaf;
 
 }
-
+#portfolio h2 { color:#fff; }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Art By Clinton - Tattoos and Designs by Clinton Wiltse</title>
+    <title>Clinton Wiltse - Portfolio</title>
     <meta name="Description" content="The official website for tattoo artist Clinton Wiltse!">
     <meta name="Keywords" content="tattoos, piercings, Clinton Wiltse, tattoo appointment, snohomish county, arlinton, everett, marysville">
 
@@ -46,14 +46,6 @@
 
 <body id="page-top" class="theme-1">
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
            <div class="container-fluid">
@@ -65,17 +57,17 @@
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                    </button>
-                   <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                   <a class="navbar-brand page-scroll" href="http://artbyclinton.com#page-top">Home</a>
                </div>
 
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                    <ul class="nav navbar-nav navbar-right">
                        <li>
-                           <a class="page-scroll" href="http://artbyclinton.com/portfolio.php">Portfolio</a>
+                           <a class="page-scroll" href="#portfolio">Portfolio</a>
                        </li>
                        <li>
-                           <a class="page-scroll" href="#links">Instagram</a>
+                           <a class="page-scroll" href="http://artbyclinton.com#links">Instagram</a>
                        </li>
                        <li>
                            <a class="page-scroll" href="#contact">Contact</a>
@@ -87,22 +79,19 @@
            <!-- /.container-fluid -->
     </nav>
 
-	<section id="header">
+
+
+	<section id="portfolio">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<img src="img/clinton.jpg" class="img-responsive" alt="an image of Clinton Wiltse."/>
-					<div class="clearfix">
-						<h1>Clinton Wiltse</h1>
-						<p>The artwork & Tattoos of Clinton Wiltse, currently tattooing at Mordor Tattoo. <a class="page-scroll" href="#links">View more artwork on Instagram</a>, or <a class="page-scroll" href="#contact">contact me for booking options</a>.</p>
-					</div>
-				</div>
-				<div id="mini-portfolio" class="col-md-6 clearfix">
-					<div class="wrapper">
+				<div class="col-md-12">
+
+					<h2>Portfolio</h2>
+
 						<ul>
 							<?php
 							$index= 0;
-							foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator('img/portfolio/front')) as $filename)
+							foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator('img/portfolio')) as $filename)
 							{
 								// filter out "." and ".."
 								if ($filename->isDir()) continue;
@@ -111,53 +100,11 @@
 							?>
 							<li><div style="background-image:url('<?php echo $filename; ?>')"><a class="mag-pop" href="<?php echo $filename; ?>">&nbsp;</a></div></li>
 							<?php
-								if ($index==13) { exit; }
-								$index++;
 							}
 							?>
 
 						</ul>
-						<h2><a href="http://artbyclinton.com/portfolio.php">View Full Portfolio</a></h2>
 
-
-					</div>
-				</div>
-			</div><!--/ row -->
-		</div><!--/ container -->
-	</section>
-
-	<section id="links">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 instagram">
-					<h3><a href="https://instagram.com/artbyclinton/">Instagram</a></h3>
-					<!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/c343d0eb55bb084268a663747d9254cf1065b288.html" id="instansive_c343d0eb55" name="instansive_c343d0eb55"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-					<a href="https://instagram.com/artbyclinton/">View All</a>
-				</div>
-				<div class="col-md-6 facebook">
-					<h3 class="facebook"><a href="https://www.facebook.com/clintonwiltse">Facebook</a></h3>
-					<div class="wrapper clearfix">
-						<a href="https://www.facebook.com/clintonwiltse">
-							<img class="photo img-responsive" src="img/facebook-photo.png" width="180" height="180" tite="Facebook photo" alt="An photo of Clinton Wiltse"/>
-						</a>
-						<p><a href="https://www.facebook.com/clintonwiltse">Visit Clinton's Facebook</a> for more artwork and news.</p>
-
-
-
-
-						<div class="fb-like" data-href="https://www.facebook.com/clintonwiltse" data-width="400" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-
-
-
-					</div>
-					<div class="mordor clearfix">
-						<h3>Mordor Tattoo</h3>
-						<img class="button img-responsive" src="img/mordor-logo.png" width="137" height="137" tite="Mordo Logo" alt="An Image depicting a portal to hell, if you stare into long enough you will in the distance witness your own death."/>
-						<p>
-							117 E. Division Street,<br/>
-							Arlington WA 98223
-						</p>
-					</div>
 				</div>
 			</div><!--/row-->
 		</div><!--/container-->
@@ -208,8 +155,7 @@
 							<input type="submit" value="Send Email">
 						  </div>
 						</div>
-</form>
-				</div>
+</form>				</div>
 				</div>
 
       		</div>
@@ -254,7 +200,7 @@
 
 	<script language="javascript">
 	$(document).ready(function() {
-		$('#header .col-md-6:last-child ul').magnificPopup({
+		$('#portfolio ul').magnificPopup({
 		  delegate: 'li div a', // child items selector, by clicking on it popup will open
 		  type: 'image'
 		  // other options
