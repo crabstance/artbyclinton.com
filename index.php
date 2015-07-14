@@ -94,7 +94,7 @@
 					<img src="img/clinton.jpg" class="img-responsive" alt="an image of Clinton Wiltse."/>
 					<div class="clearfix">
 						<h1>Clinton Wiltse</h1>
-						<p>The artwork & Tattoos of Clinton Wiltse, currently tattooing at Mordor Tattoo. View more artwork on Facebbok Clinton Wiltse, currently tattooing at Mordor Tattoo.</p>
+						<p>The artwork & Tattoos of Clinton Wiltse, currently tattooing at Mordor Tattoo. <a class="page-scroll" href="#links">View more artwork on Instagra</a>, or <a class="page-scroll" href="#contact">contact me for booking options</a>.</p>
 					</div>
 				</div>
 				<div id="mini-portfolio" class="col-md-6 clearfix">
