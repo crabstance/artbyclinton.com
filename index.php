@@ -199,6 +199,16 @@
 							<h5 class="list-group-item-heading">E-mail:</h5>
 							<input type="text" name="email" id="email" placeholder="Email" class="form-control">
 						  </div>
+						  <div id="form-phone-container" class="list-group-item" style="display:none;">
+							<h5 class="list-group-item-heading">Phone</h5>
+							<input type="text" name="phone" id="phone" placeholder="Phone" class="form-control">
+						  </div>
+							<h5 class="list-group-item-heading">How do  you prefer to be contacted?</h5>
+							<select type="text" name="contact-type" id="contact-type" class="form-control">
+								<option value='email'>By E-mail</option>
+								<option value='phone'>By Phone</option>
+							</select>
+						  </div>
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">Message:</h5>
 							<textarea name="mesg" id="message" placeholder="Message" name="message" class="form-control"></textarea>
