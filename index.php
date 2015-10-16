@@ -207,14 +207,14 @@
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">How do  you prefer to be contacted?</h5>
 							<select type="text" name="contact-type" id="contact-type" class="form-control">
-								<option value='email'>By E-mail</option>
-								<option value='phone'>By Phone</option>
+								<option value='E-mail'>By E-mail</option>
+								<option value='Phone'>By Phone</option>
 							</select>
 						  </div>
 
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">Message:</h5>
-							<textarea name="mesg" id="message" placeholder="Message" name="message" class="form-control"></textarea>
+							<textarea name="msg" id="message" placeholder="Message" name="message" class="form-control"></textarea>
 						  </div>
 						  <div class="list-group-item">
 							<input type="hidden" name="sendtoemail" value="contact@artbyclinton.com">

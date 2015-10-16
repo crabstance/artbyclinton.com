@@ -1,25 +1,55 @@
-<?php require '../class.simple_mail.php';
+<?php
 
-echo '<h1>Simple Mail</h1>';
+require 'scripts/class.simple_mail.php';
+
+$realname=	  	$_POST["realname"];
+$email=		  	$_POST["email"];
+$phone=		  	$_POST["phone"];
+$contact-type=  $_POST["contact-type"];
+$msg=			$_POST["msg"];
+
+// build email msg //
+$msg=  'Name:\r\n';
+$msg.= '==============================\r\n';
+$msg.= $realname. '\r\n';
+$msg.= '\r\n';
+$msg.= 'E-mail:\r\n';
+$msg.= '==============================\r\n';
+$msg.= $email. '\r\n';
+$msg.= '\r\n';
+$msg.= 'Phone:\r\n';
+$msg.= '==============================\r\n';
+$msg.= $phone. '\r\n';
+$msg.= '\r\n';
+$msg.= 'Contact Preference:\r\n';
+$msg.= '==============================\r\n';
+$msg.= 'By '. $contact-type. '\r\n';
+$msg.= '\r\n';
+$msg.= 'Message:\r\n';
+$msg.= '==============================\r\n';
+$msg.= $msg. '\r\n';
+$msg.= '\r\n';
+$msg.= '==============================\r\n';
+
 
 /* @var SimpleMail $mail */
 $mail = new SimpleMail();
-$mail->setTo('test1@gmail.com', 'Recipient 1')
-     ->setTo('test2@gmail.com', 'Recipient 2')
-     ->setSubject('Test Message')
-     ->setFrom('sender@gmail.com', 'Mail Bot')
-     ->addMailHeader('Reply-To', 'sender@gmail.com', 'Mail Bot')
-     ->addMailHeader('Cc', 'bill@example.com', 'Bill Gates')
-     ->addMailHeader('Bcc', 'steve@example.com', 'Steve Jobs')
+$mail->setTo('clinton@artbyclinton.com', 'Recipient 1')
+     ->setSubject('[Contact Form] ('. $realname. ') from Artbyclinton.com')
+     ->setFrom($email, $realname)
+     ->addMailHeader('Reply-To', $email, $realname)
      ->addGenericHeader('X-Mailer', 'PHP/' . phpversion())
      ->addGenericHeader('Content-Type', 'text/html; charset="utf-8"')
-     ->setMessage('<strong>This is a test message.</strong>')
+     ->setMessage( $msg )
      ->setWrap(78);
 $send = $mail->send();
 //echo $mail->debug();
 
 if ($send) {
-    echo 'Email was sent successfully!';
+    $error= 'Your e-mail has been sent to Clinton, thanks!';
 } else {
-    echo 'An error occurred. We could not send email';
+    $error= 'An error occurred. We could not send your email, please try again or contact Clinton directly by phone.';
 }
+
+echo $error;
+?>
