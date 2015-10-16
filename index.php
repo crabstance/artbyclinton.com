@@ -178,22 +178,14 @@
 
 				<div class="wrapper clearfix">
 				<div class="col-md-6">
-<form method="post" action="http://www.artbyclinton.com/send-mail.php" name="contactform">
-<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER">
-
-	<input type="hidden" name="recipients" value="clinton@artbyclinton.com" />
-    <!-- STEP 3: Specify required fields in the 'required' value -->
-    <input type="hidden" name="required" value="email:Your email address,realname:Your name" />
-    <!-- STEP 4: Put your subject line in the 'subject' value. -->
-    <input type="hidden" name="subject" value="An E-mail from ArtByClinton.Com" />
-    <input type="hidden" name="subject" value="An E-mail from ArtByClinton.Com" />
+<form action="" method="post" name="contactform" id="contact-form">
 
 							<h3>Contact or Request Booking</h3>
 						<div class="list-group">
 
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">Name:</h5>
-							<input type="text" name="realname" id="name" placeholder="Name" class="form-control">
+							<input type="text" name="realname" id="realname" placeholder="Name" class="form-control">
 						  </div>
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">E-mail:</h5>
@@ -206,7 +198,7 @@
 						  </div>
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">How do  you prefer to be contacted?</h5>
-							<select type="text" name="contacttype" id="contact-type" class="form-control">
+							<select type="text" name="contacttype" id="contacttype" class="form-control">
 								<option value='E-mail'>By E-mail</option>
 								<option value='Phone'>By Phone</option>
 							</select>
@@ -246,8 +238,6 @@
 
 
 
-
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -272,6 +262,32 @@
 		  type: 'image'
 		  // other options
 		});
+
+
+
+		$( "#contact-form" ).submit(function( event ) {
+			$realname= $("#realname").val();
+			$email= $( "#email" ).val();
+			$phone= $( "#phone" ).val();
+			$contacttype= $( "#contacttype" ).val();
+			$message= $( "#message" ).val();
+
+			$.post("send-mail.php",
+			{
+				realname: $realname,
+				email: $email,
+				phone: $phone,
+				contacttype: $contacttype,
+				message: $message
+			},
+			function(data, status){
+				alert(data);
+			});
+
+
+		  event.preventDefault();
+		});
+
 	});
 	</script>
 

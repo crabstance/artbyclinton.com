@@ -39,7 +39,7 @@ $mail->setTo('clinton@artbyclinton.com', 'Recipient 1')
      ->addGenericHeader('Content-Type', 'text/plain; charset="iso-8859-1"')
      ->setMessage( $msg )
      ->setWrap(78);
-$send = $mail->send();
+$send = $mail->send($msg);
 //echo $mail->debug();
 
 if ($send) {
@@ -51,4 +51,3 @@ if ($send) {
 echo $error;
 
 ?>
-!
