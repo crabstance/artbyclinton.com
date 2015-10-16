@@ -2,44 +2,41 @@
 
 require 'scripts/class.simple_mail.php';
 
+
 $realname=	  	$_POST["realname"];
 $email=		  	$_POST["email"];
 $phone=		  	$_POST["phone"];
-$contact-type=  $_POST["contact-type"];
-$msg=			$_POST["msg"];
+$contacttype=  $_POST["contacttype"];
+$message=		$_POST["message"];
 
 // build email msg //
-$msg=  'Name:\r\n';
-$msg.= '==============================\r\n';
-$msg.= $realname. '\r\n';
-$msg.= '\r\n';
-$msg.= 'E-mail:\r\n';
-$msg.= '==============================\r\n';
-$msg.= $email. '\r\n';
-$msg.= '\r\n';
-$msg.= 'Phone:\r\n';
-$msg.= '==============================\r\n';
-$msg.= $phone. '\r\n';
-$msg.= '\r\n';
-$msg.= 'Contact Preference:\r\n';
-$msg.= '==============================\r\n';
-$msg.= 'By '. $contact-type. '\r\n';
-$msg.= '\r\n';
-$msg.= 'Message:\r\n';
-$msg.= '==============================\r\n';
-$msg.= $msg. '\r\n';
-$msg.= '\r\n';
-$msg.= '==============================\r\n';
+$msg=  "Name:\r\n";
+$msg.=  "================================\r\n";
+$msg.= $realname. "\r\n\r\n";
+$msg.= "E-mail:\r\n";
+$msg.=  "================================\r\n";
+$msg.= $email. "\r\n\r\n";
+$msg.= "Phone:\r\n";
+$msg.=  "================================\r\n";
+$msg.= $phone. "\r\n\r\n";
+$msg.= "Contact Preference:\r\n";
+$msg.=  "================================\r\n";
+$msg.= "By ". $contacttype. "\r\n\r\n";
+$msg.= "Message\r\n";
+$msg.=  "================================\r\n";
+$msg.= $message;
+
 
 
 /* @var SimpleMail $mail */
 $mail = new SimpleMail();
 $mail->setTo('clinton@artbyclinton.com', 'Recipient 1')
+//$mail->setTo('leo.templin@gmail.com', 'Recipient 1')
      ->setSubject('[Contact Form] ('. $realname. ') from Artbyclinton.com')
      ->setFrom($email, $realname)
      ->addMailHeader('Reply-To', $email, $realname)
      ->addGenericHeader('X-Mailer', 'PHP/' . phpversion())
-     ->addGenericHeader('Content-Type', 'text/html; charset="utf-8"')
+     ->addGenericHeader('Content-Type', 'text/plain; charset="iso-8859-1"')
      ->setMessage( $msg )
      ->setWrap(78);
 $send = $mail->send();
@@ -52,4 +49,6 @@ if ($send) {
 }
 
 echo $error;
+
 ?>
+!

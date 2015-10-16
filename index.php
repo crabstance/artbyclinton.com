@@ -178,7 +178,7 @@
 
 				<div class="wrapper clearfix">
 				<div class="col-md-6">
-<form method="post" action="http://www.artbyclinton.com/hp_formmail_noimg/hp_formmail.php" name="contactform">
+<form method="post" action="http://www.artbyclinton.com/send-mail.php" name="contactform">
 <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER">
 
 	<input type="hidden" name="recipients" value="clinton@artbyclinton.com" />
@@ -206,7 +206,7 @@
 						  </div>
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">How do  you prefer to be contacted?</h5>
-							<select type="text" name="contact-type" id="contact-type" class="form-control">
+							<select type="text" name="contacttype" id="contact-type" class="form-control">
 								<option value='E-mail'>By E-mail</option>
 								<option value='Phone'>By Phone</option>
 							</select>
@@ -214,7 +214,7 @@
 
 						  <div class="list-group-item">
 							<h5 class="list-group-item-heading">Message:</h5>
-							<textarea name="msg" id="message" placeholder="Message" name="message" class="form-control"></textarea>
+							<textarea name="message" id="message" placeholder="Message" name="message" class="form-control"></textarea>
 						  </div>
 						  <div class="list-group-item">
 							<input type="hidden" name="sendtoemail" value="contact@artbyclinton.com">
